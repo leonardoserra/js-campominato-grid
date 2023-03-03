@@ -57,11 +57,12 @@ main{
     align-items: center;
 }
 
-/* .square-number{
-    display: none;
-}
-.square.clicked .square-number{
+
+.square-number{
     font-size: 30px;
     display: block; 
 }
-*/
+
+.square.clicked{
+    background-color: rgb(65, 109, 251);
+}
