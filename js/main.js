@@ -48,7 +48,7 @@ startButton.addEventListener('click', function(){
 
 
 
-function squareGenerator(number){
+function squareGenerator(numberInside){
     
     const newSquare = document.createElement('div');
     const newSquareNumber = document.createElement('div');
@@ -59,12 +59,11 @@ function squareGenerator(number){
     newSquare.classList.add('square');
     newSquareNumber.classList.add('square-number');
 
-    newSquareNumber.innerHTML = number;
+    newSquareNumber.innerHTML = numberInside;
 
     newSquare.addEventListener('click', function(){
         this.classList.toggle('clicked');
-        
-
+        console.log(numberInside);
     })
 
     return;
