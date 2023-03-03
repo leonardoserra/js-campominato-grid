@@ -57,7 +57,11 @@ main{
     align-items: center;
 }
 
-.square .square-number{
-    /* display: none; */
+/* .square-number{
+    display: none;
 }
-
+.square.clicked .square-number{
+    font-size: 30px;
+    display: block; 
+}
+*/
