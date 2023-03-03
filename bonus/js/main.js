@@ -23,7 +23,7 @@
 
 const playField = document.getElementById('playField');
 const startButton = document.getElementById('button');
-
+const difficulty = document.getElementById('difficulty');
 
 let randomNumberGenerated;
 // let cells = [];
@@ -34,8 +34,8 @@ startButton.addEventListener('click', function(){
     playField.innerHTML = '';
     // cells = [];
 
-    let i = 1// per il bonus i = .value della select forse
-    for(; i <= 100; i++){
+    let i = 1; // per il bonus i = .value della select forse
+    for(; i <= difficulty.value; i++){
         squareGenerator(i);
         // cells.push(i);
 
