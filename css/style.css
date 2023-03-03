@@ -44,6 +44,8 @@ main{
 .container{
     width: 600px;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .square{
