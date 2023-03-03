@@ -26,22 +26,22 @@ const startButton = document.getElementById('button');
 
 
 let randomNumberGenerated;
-let cells = [];
+// let cells = [];
 
 
 startButton.addEventListener('click', function(){
 
     playField.innerHTML = '';
-    cells = [];
+    // cells = [];
 
     let i = 1// per il bonus i = .value della select forse
     for(; i <= 100; i++){
         squareGenerator(i);
-        cells.push(i);
+        // cells.push(i);
 
     }
     
-    console.log(cells)
+    // console.log(cells)
 });
 
 
