@@ -25,13 +25,17 @@ const playField = document.getElementById('playField');
 const startButton = document.getElementById('button');
 let randomNumberGenerated;
 
+
 startButton.addEventListener('click', function(){
 
     playField.innerHTML = '';
 
     for(let i = 0; i < 64; i++){
         squareGenerator();
+        randomNumberGenerated = randomNumberGenerator(1 , 64);
+        console.log(randomNumberGenerated);
     }
+    
 });
 
 
@@ -48,6 +52,11 @@ function squareGenerator(){
 
 }
 
+
+function randomNumberGenerator(min, max){
+    let randomNumber = Math.floor(Math.random() * (max - min)) + min;
+    return randomNumber;
+}
     
 
 
