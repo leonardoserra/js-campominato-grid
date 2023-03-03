@@ -49,12 +49,25 @@ main{
 }
 
 .square{
-    width: calc(500px / 10);
-    height: calc(500px / 10);
     border: 2px solid rgb(170, 0, 255);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.square.easy{
+    width: calc(500px / 10);
+    height: calc(500px / 10);
+}
+
+.square.medium{
+    width: calc(500px / 9);
+    height: calc(500px / 9);
+}
+
+.square.hard{
+    width: calc(500px / 7);
+    height: calc(500px / 7);
 }
 
 

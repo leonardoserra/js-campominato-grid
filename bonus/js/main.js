@@ -48,8 +48,16 @@ function squareGenerator(numberInside){
     playField.append(newSquare);
     newSquare.append(newSquareNumber);
     
-    newSquare.classList.add('square');
+    newSquare.classList.add('square','easy');
     newSquareNumber.classList.add('square-number');
+
+    if(difficulty.value == 81){
+        newSquare.classList.remove('easy');
+        newSquare.classList.add('medium');
+    }else if(difficulty.value == 49){
+        newSquare.classList.remove('easy');
+        newSquare.classList.add('hard');
+    }
 
     newSquareNumber.innerHTML = numberInside;
 
