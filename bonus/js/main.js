@@ -32,7 +32,6 @@ startButton.addEventListener('click', function(){
 
     for(let i = 1; i <= difficulty.value; i++){
         squareGenerator(i);
-
     }
 });
 

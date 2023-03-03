@@ -24,24 +24,16 @@
 const playField = document.getElementById('playField');
 const startButton = document.getElementById('button');
 
-
-let randomNumberGenerated;
-// let cells = [];
-
-
 startButton.addEventListener('click', function(){
 
     playField.innerHTML = '';
-    // cells = [];
+    
 
-    let i = 1// per il bonus i = .value della select forse
-    for(; i <= 100; i++){
+    
+    for(let i = 1; i <= 100; i++){
         squareGenerator(i);
-        // cells.push(i);
-
     }
     
-    // console.log(cells)
 });
 
 
