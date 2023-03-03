@@ -48,6 +48,7 @@ startButton.addEventListener('click', function(){
 
 
 
+
 function squareGenerator(numberInside){
     
     const newSquare = document.createElement('div');
