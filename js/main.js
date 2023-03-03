@@ -26,6 +26,9 @@ const startButton = document.getElementById('button');
 
 
 startButton.addEventListener('click', function(){
+    
+    playField.innerHTML = '';
+
     for(let i = 0; i < 64; i++){
         const newSquare = document.createElement('div');
         const newSquareNumber = document.createElement('div');
