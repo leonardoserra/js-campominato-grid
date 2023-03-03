@@ -34,8 +34,9 @@ startButton.addEventListener('click', function(){
     playField.innerHTML = '';
     cells = [];
 
-    for(let i = 1; i <= 100; i++){
-        squareGenerator();
+    let i = 1// per il bonus i = .value della select forse
+    for(; i <= 100; i++){
+        squareGenerator(i);
         cells.push(i);
         
     }
@@ -47,8 +48,8 @@ startButton.addEventListener('click', function(){
 
 
 
-function squareGenerator(){
-
+function squareGenerator(number){
+    
     const newSquare = document.createElement('div');
     const newSquareNumber = document.createElement('div');
     
@@ -57,6 +58,11 @@ function squareGenerator(){
     
     newSquare.classList.add('square');
     newSquareNumber.classList.add('square-number');
+
+    newSquareNumber.innerHTML = number;
+
+    return;
+
 
 }
 
