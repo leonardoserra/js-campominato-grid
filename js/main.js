@@ -38,7 +38,7 @@ startButton.addEventListener('click', function(){
     for(; i <= 100; i++){
         squareGenerator(i);
         cells.push(i);
-        
+
     }
     
     console.log(cells)
@@ -60,6 +60,12 @@ function squareGenerator(number){
     newSquareNumber.classList.add('square-number');
 
     newSquareNumber.innerHTML = number;
+
+    newSquare.addEventListener('click', function(){
+        this.classList.toggle('clicked');
+        
+
+    })
 
     return;
 
