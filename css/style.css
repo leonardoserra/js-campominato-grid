@@ -52,5 +52,12 @@ main{
     width: calc(600px / 8);
     height: calc(600px / 8);
     border: 2px solid rgb(170, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square .square-number{
+    /* display: none; */
 }
 
