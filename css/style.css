@@ -38,4 +38,17 @@ header > button{
 /******     MAIN     ******/
 main{
     border-top: 1px solid grey;
+    padding-top: 50px;
 }
+
+.container{
+    width: 600px;
+    margin: auto;
+}
+
+.square{
+    width: calc(600px / 8);
+    height: calc(600px / 8);
+    border: 2px solid rgb(170, 0, 255);
+}
+
