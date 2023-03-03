@@ -42,15 +42,15 @@ main{
 }
 
 .container{
-    width: 600px;
+    width: 500px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 .square{
-    width: calc(600px / 8);
-    height: calc(600px / 8);
+    width: calc(500px / 8);
+    height: calc(500px / 8);
     border: 2px solid rgb(170, 0, 255);
     display: flex;
     justify-content: center;
