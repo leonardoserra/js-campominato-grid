@@ -26,20 +26,21 @@ const startButton = document.getElementById('button');
 
 
 let randomNumberGenerated;
-let caselle = [];
+let cells = [];
 
 
 startButton.addEventListener('click', function(){
 
     playField.innerHTML = '';
-    blacklistNumber = [];
+    cells = [];
 
-    for(let i = 0; i < 100; i++){
+    for(let i = 1; i <= 100; i++){
         squareGenerator();
+        cells.push(i);
         
     }
     
-    
+    console.log(cells)
 });
 
 
