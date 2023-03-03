@@ -49,8 +49,8 @@ main{
 }
 
 .square{
-    width: calc(500px / 8);
-    height: calc(500px / 8);
+    width: calc(500px / 10);
+    height: calc(500px / 10);
     border: 2px solid rgb(170, 0, 255);
     display: flex;
     justify-content: center;
