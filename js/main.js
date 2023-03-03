@@ -23,27 +23,30 @@
 
 const playField = document.getElementById('playField');
 const startButton = document.getElementById('button');
-
+let randomNumberGenerated;
 
 startButton.addEventListener('click', function(){
-    
+
     playField.innerHTML = '';
 
     for(let i = 0; i < 64; i++){
-        const newSquare = document.createElement('div');
-        const newSquareNumber = document.createElement('div');
-        
-        playField.append(newSquare);
-        newSquare.append(newSquareNumber);
-        
-        newSquare.classList.add('square');
-        newSquareNumber.classList.add('square-number');
-
-
-
+        squareGenerator();
     }
-})
+});
 
+
+function squareGenerator(){
+
+    const newSquare = document.createElement('div');
+    const newSquareNumber = document.createElement('div');
+    
+    playField.append(newSquare);
+    newSquare.append(newSquareNumber);
+    
+    newSquare.classList.add('square');
+    newSquareNumber.classList.add('square-number');
+
+}
 
     
 
