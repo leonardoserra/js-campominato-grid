@@ -23,20 +23,27 @@
 
 const playField = document.getElementById('playField');
 const startButton = document.getElementById('button');
+
+
 let randomNumberGenerated;
+let caselle = [];
 
 
 startButton.addEventListener('click', function(){
 
     playField.innerHTML = '';
+    blacklistNumber = [];
 
-    for(let i = 0; i < 64; i++){
+    for(let i = 0; i < 100; i++){
         squareGenerator();
-        randomNumberGenerated = randomNumberGenerator(1 , 64);
-        console.log(randomNumberGenerated);
+        
     }
     
+    
 });
+
+
+
 
 
 function squareGenerator(){
@@ -53,10 +60,9 @@ function squareGenerator(){
 }
 
 
-function randomNumberGenerator(min, max){
-    let randomNumber = Math.floor(Math.random() * (max - min)) + min;
-    return randomNumber;
-}
+
+
+
     
 
 
